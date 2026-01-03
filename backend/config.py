@@ -12,7 +12,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 COUNCIL_MODELS = [
     "allenai/olmo-3.1-32b-think:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
-    "qwen/qwen3-coder:free",
+    "mistralai/devstral-2512:free",
 ]
 
 # Chairman model - synthesizes final response

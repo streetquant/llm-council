@@ -206,13 +206,33 @@ STAGE 1 - Individual Responses:
 STAGE 2 - Peer Rankings:
 {stage2_text}
 
-Your task as Chairman is to synthesize all of this information into a single, comprehensive, accurate answer to the user's current question. Consider:
-- The conversation context and previous exchanges
-- The individual responses and their insights
-- The peer rankings and what they reveal about response quality
-- Any patterns of agreement or disagreement
+Your task as Chairman is to provide the FINAL DECISION for the user's question, not merely a summary. Follow this approach:
 
-Provide a clear, well-reasoned final answer that represents the council's collective wisdom:"""
+1. CRITICALLY EVALUATE each individual response:
+   - Identify strengths: accuracy, completeness, clarity, evidence provided
+   - Identify weaknesses: omissions, errors, poor reasoning, hallucinations
+   - Be specific and objective in your criticism
+
+2. JUDGE THE QUALITY of responses:
+   - Which responses are best? Why? Cite specific reasons.
+   - Which responses are worst? Why? Be direct.
+   - Compare responses directly against each other
+
+3. PROVIDE YOUR OWN INDEPENDENT ASSESSMENT:
+   - Do not simply parrot the peer rankings
+   - Give your own judgment based on your critical evaluation
+   - If you disagree with the peer rankings, explain why
+   - Highlight insights that peers may have missed
+
+4. DELIVER A FINAL DECISION:
+   - Synthesize the best insights from all responses
+   - Correct any errors in lower-ranked responses
+   - Provide your own authoritative answer to the user's question
+   - Be decisive and clear
+
+Your goal is to be a CRITICAL THINKER and ACTIVE JUDGE, not a passive summarizer. The user relies on you to provide the most accurate, well-reasoned answer possible.
+
+Provide your final answer now:"""
 
     messages = [{"role": "user", "content": chairman_prompt}]
 
